@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 def browser_context():
     with sync_playwright() as playwright:
         browser: Browser = playwright.chromium.launch(headless=False)
-        context: BrowserContext = browser.new_context(viewport=None)
+        context: BrowserContext = browser.new_context(no_viewport=True)
 
         page: Page = context.new_page()
         yield page

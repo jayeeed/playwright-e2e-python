@@ -24,6 +24,6 @@ def test_chatbox(browser_context):
 
     dashboard_page.type_chatbox("Hello, how are you?")
 
-    page.wait_for_timeout(5000)
-
     dashboard_page.send_chatbox()
+
+    page.wait_for_timeout(5000)

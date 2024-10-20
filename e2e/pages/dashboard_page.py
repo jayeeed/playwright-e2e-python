@@ -8,7 +8,7 @@ class DashboardPage:
             '//*[@id="root"]/div[1]/div/div/div[2]/nav/div[2]/div/button[3]/a/div'
         )
         self.chatbox_textarea = '[id="reply-input"]'
-        self.chatbox_send = '[data-testid="button-element"]'
+        self.chatbox_send = '//*[@id="root"]/div[1]/div/div/div[2]/main/div/div/div/div[1]/div[2]/div[2]/div[3]/div[2]/div/div[2]/div[2]/button'
 
     def click_chatbox(self):
         self.page.click(self.chatbox)
