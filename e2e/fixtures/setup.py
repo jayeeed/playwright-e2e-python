@@ -12,7 +12,5 @@ def browser_context():
         page: Page = context.new_page()
         yield page
 
-        # page.evaluate("window.moveTo(0, 0); window.resizeTo(screen.width, screen.height);")
-
         context.close()
         browser.close()
